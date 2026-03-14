@@ -1,20 +1,14 @@
 {
   "version": 2,
-  "env": {
-  },
   "builds": [
     {
       "src": "main.py",
       "use": "@vercel/python"
     }
   ],
-  "routes": [   
+  "routes": [
     {
       "src": "/(.*)",
-      "dest": "main.py"
-    },
-    {
-      "src": "manga/(.*)",
       "dest": "main.py"
     }
   ]
